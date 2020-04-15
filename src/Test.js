@@ -26,8 +26,6 @@ class Test extends React.Component {
 
 
   render() {
-    console.log("rerender");
-    console.log(this.state);
     return (
     <div>
       <h3>Total Number Of donations</h3>
