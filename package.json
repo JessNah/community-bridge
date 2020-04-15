@@ -12,7 +12,7 @@
   },
   "scripts": {
     "startup": "react-scripts start",
-    "start": "npm run startup",
+    "start": "(cd cb-server && npm run start) & (npm run startup)",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

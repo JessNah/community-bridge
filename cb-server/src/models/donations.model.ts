@@ -23,6 +23,7 @@ export class Donations extends Entity {
 
   @property({
     type: 'string',
+    default: 'Anonymous',
   })
   donator_username?: string;
 
