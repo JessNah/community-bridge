@@ -24,6 +24,12 @@
   // color: white;
 }
 
+.HeaderGradient {
+  width: 100%;
+  background: linear-gradient(135deg, #3633ff, #8c91ff); //#4e54c8, #8f94fb
+  padding: 200px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +42,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.curve-container,
+  .curve-container-opacity {
+    position: relative;
+    left: 0;
+    z-index: 30;
+    margin-top: -66px;
+    padding-bottom: 10px;
+  }
+
+  .curve-container-opacity {
+    z-index: 20;
+  }
+
+  .curve-container-opacity:after {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2169c4;
+    content: "";
+    z-index: 10;
+    opacity: 0.55;
+  }
