@@ -6,7 +6,7 @@ class Test extends React.Component {
     super();
 
     this.state = {
-      totalNumberOfDonation: 0,
+      totalNumberOfDonations: 0,
       totalDonationValue: 0
     }
   }
@@ -20,19 +20,20 @@ class Test extends React.Component {
     this.setState({ 
       totalNumberOfDonations: totalNumberOfDonations.count || 0,
       totalDonationValue: Array.isArray(totalDonationValue) ? 
-      totalDonationValue.reduce((sum, curr) => sum + curr.total, 0) : 0,
+      totalDonationValue.reduce((sum, curr) => sum + curr.amount, 0) : 0,
     });
   }
 
 
-
   render() {
+    console.log("rerender");
+    console.log(this.state);
     return (
     <div>
-      <h3>Total Number Of Sales</h3>
-        { this.state.totalNumberOfDonation }
-      <h3>Total Number Of Sales</h3>
-        { this.state.totalDonationValue }
+      <h3>Total Number Of donations</h3>
+        { this.state.totalNumberOfDonations + ""}
+      <h3>Total value of donations</h3>
+        { this.state.totalDonationValue + ""}
     </div>
     );
   }
