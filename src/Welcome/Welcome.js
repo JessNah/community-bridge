@@ -10,12 +10,12 @@ class Welcome extends Component {
 	Timer;
 
 	componentDidMount() {
-		this.Timer = setTimeout(() => {
-			this.setState({unmountProcedureActive: true});
-		}, 5000);
-		this.Timer = setTimeout(() => {
-			this.setState({renderedImg1: true, unmountProcedureActive: false});
-		}, 6500);
+		// this.Timer = setTimeout(() => {
+		// 	this.setState({unmountProcedureActive: true});
+		// }, 5000);
+		// this.Timer = setTimeout(() => {
+		// 	this.setState({renderedImg1: true, unmountProcedureActive: false});
+		// }, 6500);
 	}
 
 	componentWillUnmount() {
