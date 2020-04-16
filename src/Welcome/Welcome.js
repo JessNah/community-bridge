@@ -6,7 +6,7 @@ import withAnimationEaseIn from "../Utilities/withAnimationEaseIn/withAnimationE
 import withAnimationEaseOut from "../Utilities/withAnimationEaseOut/withAnimationEaseOut.js";
 
 class Welcome extends Component {
-	state = {renderedImg1: false,  unmountProcedureActive: false}
+	state = {renderedImg1: true,  unmountProcedureActive: false} //renderedImg1 should default false if want animation
 	Timer;
 
 	componentDidMount() {
