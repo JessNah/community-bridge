@@ -28,6 +28,9 @@ class Welcome extends Component {
 		return (
 			<React.Fragment>
 				<div className={"HeaderGradient"}>
+					<div className={"ApplicationName"}>
+						Welcome to Community Bridge.
+					</div>
 					We may be apart, but we'll get through this together.
 				</div>
 				<div>
